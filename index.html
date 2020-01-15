@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merlin's Potions</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header id="cabecalho-pagina">
+
+        <!-- Menu Mobile -->
+
+        <div class="mobile-menu-container" id="menu-dropdown">
+            <img class="mobile-menu-icon" id="dropdown" onclick="mostraMenuFunction()" src="images/Icons/menu-icon.png">
+            <div class="mobile-search-container">
+                <input type="search" class="input-search-stock" id="mobile-search" placeholder="Search our stock">
+            </div>
+            <div class="mobile-menu-dropdown-container">
+                <div class="mobile-menu-dropdown-itens" id="dropdown-itens">
+                    <a href="">Potions</a>
+                    <a href="">Ingredients</a>
+                    <a href="">Books</a>
+                    <a href="">Supplies</a>
+                    <a href="">Charms</a>
+                    <a href="">Clearance!</a>
+                    <div class="mobile-user-area">
+                        <a href="" class="mobile-sign-text">Sign In</a> <span>or</span>
+                        <a href="" class="mobile-sign-text">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header da Página -->
+
+        <div id="menu-principal" class="menu-principal">
+            <div id="cabecalho-logo" class="cabecalho-logo">
+                <img class="logo" src="images/Icons/logo.png" alt="Merlin's potions logo">
+            </div>
+
+            <div id="cabecalho-barra-busca" class="cabecalho-barra-busca">
+                <input type="search" class="input-busca" name="busca" id="busca" placeholder="Search our stock">
+            </div>
+
+            <div id="cabecalho-carrinho" class="cabecalho-carrinho">
+                <div id="cabecalho-free" class="cabecalho-free">
+                    <p>Free shipping</p><span>on orders over &dollar;50</span>
+                </div>
+
+                <div id="cabecalho-img" class="cabecalho-img">
+                    <img class="icone-bag" src="images/Icons/icone_bag.png" alt="A little purple caldron">
+                </div>
+
+                <div id="cabecalho-qtd" class="cabecalho-qtd">
+                    <span class="bag-qtd">BAG: </span><span class="carrinho-qtd">1</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Free Shipping -->
+
+        <div class="texto-mobile-container">
+            <span class="mobile-shipping-texto">Free shipping on order over $50</span>
+        </div>
+
+        <!-- Menu de navegação da página -->
+
+        <input type="checkbox" name="bt_menu" id="bt_menu" class="bt_menu">
+        <label for="bt_menu"><img src="images/Icons/menu-icon.png" alt=""></label>
+
+        <nav id="menu-navegacao" class="menu-navegacao">
+            <ul class="itens-navegacao">
+                <li><a href="">Potions</a></li>
+                <li><a href="">Ingredients</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">Supplies</a></li>
+                <li><a href="">Charms</a></li>
+                <li><a href="">Clearence!</a></li>
+            </ul>
+
+            <div class="usuario">
+                <a href="" class="area-login-usuario">Sign In</a>
+                <span>or</span>
+                <a href="" class="area-login-usuario">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Potions</h1>
+
+        <section class="conteiner">
+            <div class="produtos">
+
+                <div class="produto">
+                    <img class="img-pocao" src="images/products/aging-potion.png" alt="Purple aging potion">
+                    <div class="desc-pocao">
+                        <strong class="nome-pocao">Aging Potion -</strong>
+                        <span class="preco-pocao">$29.99</span>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <img class="img-pocao" src="images/products/bulgeye-potion.png" alt="Green bulgeye potion">
+                    <div class="desc-pocao">
+                        <strong class="nome-pocao">Bulgeye Potion -</strong>
+                        <span class="preco-pocao">$19.99</span>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <img class="img-pocao" src="images/products/dragon-tonic.png" alt="Lilac dragon tonic">
+                    <div class="desc-pocao">
+                        <strong class="nome-pocao">Dragon Tonic -</strong>
+                        <span class="preco-pocao">$64.99</span>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <img class="img-pocao" src="images/products/love-potion.png" alt="Red love potion">
+                    <div class="desc-pocao">
+                        <strong class="nome-pocao">Love Potion -</strong>
+                        <span class="preco-pocao">$29.99</span>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <img class="img-pocao" src="images/products/polyjuice-potion.png" alt="Light green polyjuice potion">
+                    <div class="desc-pocao">
+                        <strong class="nome-pocao">Polyjuice Potion -</strong>
+                        <span class="preco-pocao">$99.99</span>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <img class="img-pocao" src="images/products/sleeping-draught.png" alt="Blue sleeping draught potion">
+                    <div class="desc-pocao">
+                        <strong class="nome-pocao">Sleeping Draught -</strong>
+                        <span class="preco-pocao">$14.99</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div id="rodape-esquerda" class="rodape-esquerda">
+            <div id="rodape-links" class="rodape-links">
+                <ul class="rodape-lista">
+                    <a href="">Company</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Shipping</a>
+                    <a href="">Returns</a>
+                    <a href="">Careers</a>
+                </ul>
+            </div>
+
+
+            <div id="rodape-social" class="rodape-social">
+                <img class="rodape-social-icone" src="images/Icons/facebook-icon.png" alt="icone fecebook pequeno">
+                <img class="rodape-social-icone" src="images/Icons/twitter-icon.png" alt="icone twitter pequeno">
+                <img class="rodape-social-icone" src="images/Icons/pinterest-icon.png" alt="icone pinterest pequeno">
+                <img class="rodape-social-icone" src="images/Icons/tumblr-icon.png" alt="icone tumblr pequeno">
+                <img class="rodape-social-icone" src="images/Icons/google-icon.png" alt="icone google + pequeno">
+            </div>
+
+            <div id="rodape-copy" class="rodape-copy">
+                <span class="footer-copyright">&copy; 2015 Merlin's Potions. All Rights Reserved</span>
+            </div>
+        </div>
+
+        <div class="rodape-direita">
+            <form class="formulario">
+                <div class="formulario-newsletter">
+                    <h2>Sign up for our Newsletter</h2>
+                    <p>Sign up for our newsletter & get exclusive discounts!</p>
+                </div>
+                <div class="formulario-input">
+                    <input type="email" name="email" id="email" class="form-email" placeholder="Enter your email">
+                    <button type="submit" id="botao-submit" class="botao-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </footer>
+
+    <!-- Modal -->
+
+    <div id="modal-pocao" class="modal-container">
+        <div class="modal">
+            <button id="bt_modal" class="bt_modal">X</button>
+            <div class="modal-img-conteiner">
+                <img id="pocao-img" class="modal-pocao-img" src="images/products/aging-potion.png">
+            </div>
+            <div class="modal-pocao-info">
+                <div class="pocao-nome-container">
+                    <h3 id="pocao-nome" class="modal-pocao-titulo"></h3>
+                </div>
+                <div class="pocao-efeito-container">
+                    <h3 class="modal-pocao-titulo">Use/Effect:</h3>
+                    <p id="pocao-efeito" class="modal-pocao-txt">Causes the drinker...</p>
+                </div>
+                <div class="pocao-ingrediente-container">
+                    <h3 class="modal-pocao-titulo">Ingredients:</h3>
+                    <ul id="pocao-ingrediente" class="modal-pocao-ingrediente">
+                    </ul>
+                </div>
+                <div class="pocao-preco-container">
+                    <h3 class="modal-pocao-titulo" id="pocao-preco-titulo">Price:</h3>
+                    <span id="pocao-preco" class="pocao-preco">$29.99</span>
+                    <button id="button-add-cart" class="submit-button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

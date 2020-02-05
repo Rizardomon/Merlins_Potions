@@ -23,88 +23,32 @@ window.onclick = function(event) {
 }
 
 
+//Pegar as informações das poções pelo JSON
+function getJSON() {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open('GET', "https://cdn.rawgit.com/LucasRuy/1d4a5d45e2ea204d712d0b324af28bab/raw/342e0e9277be486102543c7f50ef5fcf193234b6/potions.json", false);
+    xmlHttp.send(null);
+    var myObj = JSON.parse(xmlHttp.responseText);
+    return myObj;
+}
 
+function showInfos(id) {
+    var myObj = getJSON();
 
-potionInfos = [{
-        "id": 0,
-        "name": "Aging Potion",
-        "image": "aging-potion.png",
-        "price": 29.99,
-        "effect": "Causes the drinker to advance in age",
-        "ingredients": [
-            "Red Wine",
-            "Prune Juice",
-            "Hairy Fungus",
-            "Tortoise Shell",
-            "Caterpillar",
-            "Bat Tongue"
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Bulgeye Potion",
-        "image": "bulgeye-potion.png",
-        "price": 19.99,
-        "effect": "It affects one's eyes, causing them to swell",
-        "ingredients": [
-            "Beetle eyes",
-            "Eel eyes"
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Dragon Tonic",
-        "image": "dragon-tonic.png",
-        "price": 64.99,
-        "effect": "A tonic used to cure sick dragons",
-        "ingredients": [
-            "Eagle Owl feathers",
-            "Peacock feathers",
-            "Giant Purple Toad warts"
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Love Potion",
-        "image": "love-potion.png",
-        "price": 29.99,
-        "effect": "The one who drinks it falls deeply in love with the first person they see",
-        "ingredients": [
-            "Petals from a red rose",
-            "Essence of violet",
-            "Canary flight and down feathers",
-            "Newt eyes"
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Polyjuice Potion",
-        "image": "polyjuice-potion.png",
-        "price": 99.99,
-        "effect": "Allows the drinker to assume the form of someone else",
-        "ingredients": [
-            "Lacewing flies",
-            "Leeches",
-            "Powdered bicorn horn",
-            "Knotgrass",
-            "Fluxweed",
-            "Shredded Boomslang skin"
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Sleeping Draught",
-        "image": "sleeping-draught.png",
-        "price": 29.99,
-        "effect": "Causes the drinker to fall almost instantaneously into a deep but temporary sleep",
-        "ingredients": [
-            "Sprigs of Lavender",
-            "Measures of Standard Ingredient",
-            "Blobs of Flobberworm Mucus",
-            "Valerian sprigs"
-        ]
+    document.querySelector('#pocao-img').src = 'images/products/' + myObj.potions[id].image;
+    document.querySelector('#pocao-nome').innerHTML = myObj.potions[id].name;
+    document.querySelector('#pocao-efeito').innerHTML = myObj.potions[id].effect;
+    document.querySelector('#pocao-preco').innerHTML = '$' + myObj.potions[id].price;
+
+    var ul = document.querySelector('#pocao-ingrediente');
+    ul.innerHTML = '';
+    for (let i = 0; i < myObj.potions[id].ingredients.length; i++) {
+        var li = document.createElement('li');
+        ul.appendChild(li);
+        li.innerHTML = myObj.potions[id].ingredients[i];
     }
-]
+
+}
 
 var pocao = document.getElementsByClassName('produto');
 //Mostrar e fechar Modal
@@ -113,16 +57,6 @@ function iniciaModal(modalID) {
     for (let i = 0; i < pocao.length; i++) {
         if (modal) {
             modal.classList.add('mostrar');
-
-            document.getElementById('pocao-img').src = 'images/products/' + potionInfos[i].image;
-            document.getElementById('pocao-nome').innerHTML = potionInfos[i].name;
-            document.getElementById('pocao-efeito').innerHTML = potionInfos[i].effect;
-            document.getElementById('pocao-preco').innerHTML = potionInfos[i].price;
-
-            for (let j = 0; j < potionInfos[i].ingredients.length; j++) {
-                document.getElementById('pocao-ingrediente').innerHTML = potionInfos[i].ingredients[j];
-            }
-
 
             modal.addEventListener('click', (e) => {
                 if (e.target.id == modalID || e.target.className == 'bt_modal') {

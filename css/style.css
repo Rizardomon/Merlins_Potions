@@ -22,7 +22,7 @@ h2 {
 .mobile-menu-dropdown-itens,
 .mobile-user-area,
 .header-itens.hide,
-#mobile-search {
+#mobile-search-container {
     display: none;
 }
 
@@ -333,9 +333,9 @@ footer {
 
 .modal {
     background: white;
-    width: 50%;
+    width: 60%;
     height: auto;
-    min-width: 300px;
+    min-width: 200px;
     padding: 40px;
     position: relative;
     display: flex;
@@ -398,7 +398,7 @@ footer {
 }
 
 .mostrar .modal {
-    animation: modal .3s;
+    animation: modal .5s;
 }
 
 .bt_modal {
@@ -444,6 +444,20 @@ footer {
     .mobile-menu-icon {
         display: inline;
         cursor: pointer;
+        margin-left: 10px;
+    }
+    #mobile-search-container {
+        display: none;
+        position: absolute;
+        left: 80px;
+        top: 4px;
+    }
+    #mobile-search {
+        padding: 10px 111px;
+        border: 1px solid black;
+        border-radius: 4px;
+        text-align: center;
+        background: url(../images/Icons/search-icon.png) no-repeat;
     }
     .mobile-menu-dropdown-container {
         margin: 10px 0;
@@ -457,9 +471,6 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .mobile-menu-dropdown-itens a:first-child {
-        margin-top: 10px;
-    }
     .mobile-user-area a:first-child {
         margin-top: 0;
     }
@@ -468,7 +479,10 @@ footer {
         text-decoration: none;
         font-style: italic;
         color: white;
-        margin-top: 20px;
+        width: 100vw;
+        text-align: center;
+        line-height: 45px;
+        border-bottom: 1px solid rgba(78, 78, 78, 0.8);
     }
     .mobile-menu-dropdown-itens a:hover {
         background: #461b64;
@@ -477,6 +491,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
     }
     .mobile-user-area .mobile-sign-text {
         display: inline-block;

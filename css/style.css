@@ -636,26 +636,47 @@ footer {
     }
     .modal {
         background: white;
-        width: 75%;
+        width: 65vw;
         height: auto;
         min-width: 200px;
         padding: 40px;
         position: absolute;
         display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .modal-pocao-img {
         width: 50vw;
-        height: 60vh;
+        height: 40vh;
     }
     .modal-pocao-info {
         width: 100%;
         display: flex;
         position: relative;
         flex-direction: column;
-        /* align-items: center; */
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    .modal-pocao-titulo {
+        font-size: 1rem;
+    }
+    .modal-pocao-txt {
+        font-size: .85rem;
+    }
+    .modal-pocao-ingrediente {
+        font-size: .85rem;
+    }
+    .pocao-preco {
+        font-size: 1rem;
+    }
+    .pocao-nome-container {
+        display: flex;
+        justify-content: center;
+    }
+    .pocao-preco-container {
+        display: flex;
+        align-items: center;
     }
     .submit-button {
-        width: 90%;
+        width: 50%;
     }
 }

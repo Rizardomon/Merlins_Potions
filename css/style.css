@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -283,7 +284,10 @@ footer {
     width: 40%;
 }
 
-.rodape-direita form {
+.formulario {
+    margin-top: 20px;
+    width: 100%;
+    height: 65%;
     margin-top: 20px;
     width: 100%;
     height: 65%;
@@ -292,19 +296,15 @@ footer {
     border-radius: 5px;
 }
 
-.formulario {
-    margin-top: 20px;
-    width: 100%;
-    height: 65%;
-}
-
 .formulario-newsletter {
     margin: 0px 30px 15px 30px;
 }
 
 .formulario p {
+    margin-top: 10px;
     width: 100%;
     text-align: justify;
+    font-size: .8rem;
 }
 
 .form-email {
@@ -430,7 +430,7 @@ footer {
 @media (min-width: 320px) and (max-width: 800px) {
     body {
         overflow-x: hidden;
-        width: 100%;
+        width: 100vw;
     }
     h1 {
         text-align: center;
@@ -465,7 +465,7 @@ footer {
         top: 4px;
     }
     #mobile-search {
-        padding: 10px 111px;
+        padding: 10px 55px;
         border: 1px solid black;
         border-radius: 4px;
         text-align: center;
@@ -597,6 +597,7 @@ footer {
     }
     .formulario {
         padding: 5px;
+        width: 100%;
     }
     .formulario-newsletter {
         display: inline;
@@ -623,12 +624,11 @@ footer {
     }
     .rodape-social {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        al
     }
     .rodape-social-icone {
-        margin: 1px 25px 10px 25px;
+        /* margin: 1px 0px 10px 0px; */
     }
     .rodape-copy {
         text-align: center;

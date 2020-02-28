@@ -564,6 +564,8 @@ footer {
     .icone-bag {
         width: 60%;
         cursor: pointer;
+        margin-right: 0;
+        margin-left: 8px;
     }
     .conteiner {
         margin: auto;
@@ -588,10 +590,10 @@ footer {
         display: flex;
     }
     footer h2 {
+        margin-top: 10px;
         margin-bottom: 10px;
         text-align: initial;
     }
-    footer p {}
     .rodape-direita {
         width: fit-content;
     }
@@ -632,7 +634,7 @@ footer {
     }
     .modal {
         background: white;
-        width: 65vw;
+        width: 85vw;
         height: auto;
         min-width: 200px;
         padding: 40px;
@@ -642,7 +644,7 @@ footer {
         flex-direction: column;
     }
     .modal-pocao-img {
-        width: 50vw;
+        width: 100%;
         height: 35vh;
     }
     .modal-pocao-info {
@@ -676,6 +678,6 @@ footer {
         width: 20vw;
         padding: 4px;
         font-size: .58rem;
-        margin: 0 0 0 5px;
+        margin: 0 0 0 20px;
     }
 }

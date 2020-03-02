@@ -16,13 +16,13 @@ function mostraMenuFunction() {
 }
 
 function showElements() {
-    mudaImagemMenu.src = 'images/icons/menu-close-icon.png';
+    mudaImagemMenu.src = 'images/icons/menu-close-icon.svg';
     escondeCabecalho.style = 'display: none';
     barraBusca.style = 'display: block'
 }
 
 function hideElements() {
-    mudaImagemMenu.src = 'images/icons/menu-icon.png';
+    mudaImagemMenu.src = 'images/icons/menu-icon.svg';
     escondeCabecalho.style = 'display: flex';
     barraBusca.style = 'display: none'
 }

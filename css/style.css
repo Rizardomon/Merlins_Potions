@@ -20,6 +20,10 @@ h2 {
     font-style: italic;
 }
 
+button {
+    cursor: pointer;
+}
+
 .mobile-menu-icon,
 .mobile-menu-dropdown-itens,
 .mobile-user-area,
@@ -68,10 +72,11 @@ header {
 .input-busca {
     height: 32%;
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid #333;
     border-radius: 4px;
     padding-left: 50px;
-    background: url(../images/Icons/search-icon.png) no-repeat;
+    background: url(../images/Icons/search-icon.png) no-repeat 2%;
+    background-size: 9%;
 }
 
 .cabecalho-carrinho {
@@ -265,6 +270,10 @@ footer {
     text-transform: uppercase;
 }
 
+.rodape-lista a:hover {
+    opacity: 0.8;
+}
+
 .rodape-social {
     margin: 30px 0 30px 0;
 }
@@ -273,6 +282,10 @@ footer {
     cursor: pointer;
     width: 35px;
     margin: 0 15px 0 15px;
+}
+
+.rodape-social-icone:hover {
+    opacity: 0.9;
 }
 
 .rodape-copy {
@@ -329,7 +342,15 @@ footer {
     color: white;
     cursor: pointer;
     text-transform: uppercase;
+    font-weight: bold;
     width: 24%;
+    transition: all 400ms ease;
+}
+
+.formulario-input button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #d6391e;
+    box-shadow: inset 0 0 0 3px #d6391e;
 }
 
 
@@ -402,6 +423,13 @@ footer {
     font-size: 1em;
     border-radius: 5px;
     width: 50%;
+    transition: all 400ms ease;
+}
+
+.submit-button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #d6391e;
+    box-shadow: inset 0 0 0 3px #d6391e;
 }
 
 .pocao-preco {
@@ -431,10 +459,29 @@ footer {
     height: 50px;
     border-style: none;
     background: none;
-    padding: 10px;
-    cursor: pointer;
-    font-family: Arial;
-    font-size: 20px;
+}
+
+.bt_modal:hover {
+    opacity: 0.5;
+}
+
+.bt_modal::before,
+.bt_modal::after {
+    position: absolute;
+    content: '';
+    background-color: black;
+    left: 22px;
+    top: 9px;
+    height: 33px;
+    width: 2px;
+}
+
+.bt_modal::before {
+    transform: rotate(45deg);
+}
+
+.bt_modal::after {
+    transform: rotate(-45deg);
 }
 
 @media (min-width: 320px) and (max-width: 800px) {
@@ -479,7 +526,8 @@ footer {
         border: 1px solid black;
         border-radius: 4px;
         text-align: center;
-        background: url(../images/Icons/search-icon.png) no-repeat;
+        background: url(../images/Icons/search-icon.png) no-repeat 2%;
+        background-size: 8%;
     }
     .mobile-menu-dropdown-container {
         margin: 10px 0;

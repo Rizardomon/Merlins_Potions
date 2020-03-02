@@ -381,6 +381,7 @@ footer {
     padding: 40px;
     position: relative;
     display: flex;
+    border-radius: 10px;
 }
 
 .modal-img-conteiner {
@@ -513,13 +514,14 @@ footer {
     .mobile-menu-icon {
         display: inline;
         cursor: pointer;
-        margin-left: 10px;
+        margin-left: 15px;
+        width: 120%;
     }
     #mobile-search-container {
         display: none;
         position: absolute;
         left: 80px;
-        top: 4px;
+        top: 0;
     }
     #mobile-search {
         padding: 10px 55px;

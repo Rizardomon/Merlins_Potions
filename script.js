@@ -24,7 +24,7 @@ function showElements() {
 function hideElements() {
     mudaImagemMenu.src = 'images/icons/menu-icon.svg';
     escondeCabecalho.style = 'display: flex';
-    barraBusca.style = 'display: none'
+    barraBusca.style = 'display: none';
 }
 
 // fechar menu

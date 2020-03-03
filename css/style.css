@@ -585,8 +585,17 @@ footer {
     .span {
         color: gray;
     }
+    @keyframes dropdown {
+        from {
+            left: -1200%;
+        }
+        to {
+            left: 0;
+        }
+    }
     .showMenu {
         display: flex;
+        animation: dropdown 500ms ease;
     }
     header {
         height: auto;

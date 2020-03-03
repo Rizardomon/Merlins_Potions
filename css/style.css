@@ -494,7 +494,7 @@ footer {
     transform: rotate(-45deg);
 }
 
-@media (min-width: 320px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 425px) {
     body {
         width: 100vw;
         overflow-x: hidden;

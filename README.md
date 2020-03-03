@@ -1,5 +1,10 @@
 # Merlins_Potions
- Página e-comerce de poções
+ Página e-comerce de poções construida para o curso de capacitação da Enext.
+ 
+ Foram utilizados no projeto:
+  - HTML5;
+  - CSS3 puro;
+  - JavaScript puro.
 
 # Layout Desktop 
 ![Merlins Potions Layout](/images/Layout/Merlins-Potions-Desktop.png)
